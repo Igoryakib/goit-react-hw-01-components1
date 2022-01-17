@@ -9,7 +9,7 @@ import Profile from "./Profile/Profile.jsx";
 import Statistics from "./Statistics/Statistics.jsx";
 import FriendList from "./FriendList/FriendList.jsx";
 import TransactionHistory from './TransactionHistory/TransactionHistory.jsx';
-
+// code 
 const App = () => {
   return (
     <>

@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import styles from "./Statistics.module.scss";
+import styles from "./Statistics.module.css";
 
 const Statistics = ({ title, stats }) => {
   return (
@@ -24,6 +24,10 @@ const Statistics = ({ title, stats }) => {
 Statistics.propTypes = {
   title: PropTypes.string,
   stats: PropTypes.array.isRequired,
+};
+
+Statistics.defaultProps = {
+  title: 'stats'
 };
 
 export default Statistics;

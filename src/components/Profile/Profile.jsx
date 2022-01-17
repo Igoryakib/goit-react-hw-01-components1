@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from 'prop-types';
-import styles from "./Profile.module.scss";
+import styles from "./Profile.module.css";
 const Profile = ({ name, tag, location, avatar, stats }) => {
     const classesStats = [styles.label_border, styles.item_stats];
   return (
@@ -36,6 +36,11 @@ Profile.propTypes = {
   stats: PropTypes.object.isRequired,
   tag: PropTypes.string,
   location: PropTypes.string
+};
+
+Profile.defaultProps = {
+  tag: '@nickName',
+  location: 'notFound'
 };
 
 export default Profile;
